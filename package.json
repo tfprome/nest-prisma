@@ -9,8 +9,7 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "start": "node dist/src/main",
-    "start:dev": "npm run copy:prisma && nest start --watch",
-    "copy:prisma": "npx copyfiles -u 1 \"src/generated/**/*\" dist/src",
+    "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main"
   },
